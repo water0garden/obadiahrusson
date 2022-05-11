@@ -1,0 +1,143 @@
+/* Format for applying styling rules */
+[selector] {
+  [property]: [value];
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	vertical-align: baseline;
+	background: none;
+	border: none;
+}
+
+
+html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+
+@media (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.clearfix {
+   overflow: auto;
+}
+
+@font-face {
+  font-family: 'Monaco';
+  src: url(../fonts/Monaco.dfont);
+}
+
+
+
+/* Global Styles go here */
+
+
+body {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+   /* text-transform: uppercase; */
+  letter-spacing: 0.045rem;
+  color: grey;
+  margin: 0;
+  padding: 1.3rem;
+  background: white;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-align: left;
+  border-radius: 0;
+}
+
+/* Navigation */
+
+.text-frag {
+  display: inline-block;
+  margin-right: 6ch;
+  vertical-align: top;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .text-frag {
+    margin-right: 2ch;
+  }
+}
+
+a {
+  float: left;
+  font-size: inherit;
+  color: grey;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+/* obadiah russon Works */
+
+.home-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+figure {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  width: 50%;
+  margin: 0 auto;
+  /* border-radius: 50%; */
+}
+
+img {
+  width: 100%;
+
+}
+
+.work {
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;  */
+}
+
+
+
+.text-block {
+  padding-top: 140px;
+  width: 80%;
+}

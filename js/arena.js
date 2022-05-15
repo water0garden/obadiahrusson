@@ -53,14 +53,38 @@ document.addEventListener("DOMContentLoaded", function (event) {
           };
 
 
-          var entryHTML = '<figure class="work">'
+          var randomNum = Math.random() * 100;
+
+            if (randomNum<55) {
+              var size = 'small';
+            }
+            else if (randomNum<66) {
+              var size = 'medium';
+            }
+            else if (randomNum<100) {
+              var size = 'large';
+            }
+            // else if (randomNum<100) {
+            //   var size = 'ornaments';
+            // }
+
+
+        //   var entryHTML = '<figure class="work ' + size + '">'
+        //         + '<img src="' + entry.image.original.url + '">'
+        //         + '<figcaption>'
+        //           + entry.title + entry.description_html
+        //         + '</figcaption>'
+        //       + '</figure>';
+        // }
+
+
+          var entryHTML = '<figure class="work ' + size + '">'
                 + '<img src="' + entry.image.original.url + '">'
                 + '<div class="dropdown">'
-                  +  '<button class="dropbtn">'
+                  +  '<div class="dropbtn">'
                     + entry.title
-                      +  '<i class="fa fa-caret-down"></i>'
-                  + '</button>'
-                  + '<div class="dropdown-content" id="myDropdown">'
+                  + '</div>'
+                  + '<div class="dropdown-content">'
                   + entry.description_html
                   + '</div>'
                 + '</div>'

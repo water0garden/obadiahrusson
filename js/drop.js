@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-  var entryHTML = '<figure class="work ' + size + '">'
-        + '<img src="' + entry.image.original.url + '">'
+  var entryHTML = '<figure class="work">'
+        + '<img src="' + entry.image.original.url'">'
         + '<dropdown>'
           '<button class="dropbtn" onclick="myFunction()">'
         + entry.title
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           '</div>'
         + '</dropdown>'
       + '</figure>';
-  }
+
 
 
 })
